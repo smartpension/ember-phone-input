@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: ember-source
+    versions:
+    - 3.24.0
+    - 3.24.1
+  - dependency-name: ember-template-lint
+    versions:
+    - 2.15.0
+    - 2.18.0
+  - dependency-name: ember-cli
+    versions:
+    - 3.23.0
+    - 3.24.0
+  - dependency-name: eslint
+    versions:
+    - 7.16.0
+    - 7.19.0
+  - dependency-name: eslint-plugin-ember
+    versions:
+    - 10.1.1
+  - dependency-name: intl-tel-input
+    versions:
+    - 17.0.8
+  - dependency-name: ember-cli-babel
+    versions:
+    - 7.23.0
